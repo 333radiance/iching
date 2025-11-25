@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-<meta charset="UTF-8" />
-<title>I Ching Fortune</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Ching Fortune</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body style="font-family: sans-serif; padding: 40px;">
-<h1>Success!</h1>
-<p>Your GitHub Pages site is now working.</p>
+<body>
+
+<div class="container">
+    <h1>易經占卜</h1>
+    <button id="castButton">🔮 占卜一下</button>
+
+    <div id="result" class="result-section" style="display:none;">
+        <h2>本卦：<span id="hexName"></span></h2>
+        <p id="hexDesc"></p>
+
+        <h2>變卦：<span id="changedHexName"></span></h2>
+        <p id="changedHexDesc"></p>
+
+        <h3>六爻：</h3>
+        <div id="lines"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
