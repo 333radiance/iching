@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<title>易經占問</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background: #f4f1eb;
+  padding: 40px;
+}
+.container {
+  max-width: 720px;
+  margin: auto;
+  background: #ffffffd0;
+  padding: 28px;
+  border-radius: 14px;
+}
+button {
+  padding: 14px;
+  width: 100%;
+  background: #8b6a47;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.result { margin-top: 20px; }
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h1>易經占問（可正常上載版本）</h1>
+  <p>靜心、默問問題，然後按下按鈕。</p>
+  <button onclick="show()">開始占問</button>
+
+  <div id="result" class="result" style="display:none;">
+    <h3>示例卦象</h3>
+    <p>此版本僅用來測試 Netlify 上載是否成功。</p>
+  </div>
+</div>
+
+<script>
+function show(){
+  document.getElementById("result").style.display = "block";
+}
+</script>
+
+</body>
+</html>
